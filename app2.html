@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿De qué categoría eres?</title>
+</head>
+<body>
+    Edad:<input type="text" id="edad_id"> <br>
+    <input type="button" value="Ver estado" onclick="comprobarcategoria()">
+
+    <script>
+        function comprobarcategoria(){
+
+        var edad = document.getElementById("edad_id").value;
+       // alert(edad);
+            if(edad <= 7){
+                alert("Eres benjamin");
+            }else if(edad <= 9){
+                alert("ALEVÍN");
+            }else if (edad<=11) {
+                alert("Infantil")   
+            }else if (edad=>12) {
+                alert ("Cadete")
+                
+            }
+
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estados del agua</title>
+</head>
+<body>
+    Dime una temperatura: <input type="text" id= tempid><br>
+    <br><input type="button" value="ver estado" onclick="verestado()"><br>
+    
+    <script>
+        function verestado(){
+            // alert("test")
+      var temp=document.getElementById("tempid").value;
+      if (temp<0) {
+        alert("HIELO")
+      }else if (temp<100) {
+        alert("líquido")
+        
+      }else  {
+        alert("vapor")
+        
+      }
+    }
+    
+        
+    </script>
+</body>
+</html>
