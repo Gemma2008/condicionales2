@@ -4,39 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recetas</title>
-
+    <title>ejercicio7</title>
 </head>
 <body>
-    <style>
-        .myDiv {
-            border: 5px outset rgb(212, 17, 196);
-            background-color: rgb(217, 173, 230);
-            text-align:center;
-
-        }
-    </style>
-
+    Nombre_1:<input type="text" id="nombre1">
+    Edad_1: <input type="number" id="edad1"><br>
+    Nombre_2:<input type="text" id="nombre2">
+    Edad_2: <input type="number" id="edad2">
+    <br><input type="button" value="comprobar" onclick="comprobar()"><br>
     
+    <script>
+    
+        function comprobar() {
 
-    <h1>TUS FRESAS DE CONFIANZA</h1>
-    <div class="myDiv">
-        <h2>FRESAS DE PALOS DE LA FRONTERA</h2>
-        <p>Son buenas y baratas</p>
-    </div>
-    <p>Son perfectas para hacer <strong>zumos, batidos y postres</strong> con ellas.</p>
-    <p> Aquí os dejo una receta de tarta de fresas</p>
-    <ul>
-        <li>Fresas de Palos de la Frontera</li>
-        <li>Nata montada</li>
-        <li>Leche</li>
-        <li>Gelatina neutra</li>
-        <li>Galletas maría</li>
-        <li>Mantequilla</li>
-        
-    </ul>
-      <img src="tarta de fresa.jpg" alt=""
-      style="width: 600px;height: 300px;">
+            var edad_1=parseInt(document.getElementById("edad1").value);
+            var edad_2=parseInt(document.getElementById("edad2").value);
+            var nombre_1=document.getElementById("nombre1").value;
+            var nombre_2=document.getElementById("nombre2").value;
+
+            if (edad_1 < edad_2) {
+               alert("el/la mayor es  " + nombre_2)
+            
+            } else if (edad_1 > edad_2) {
+                alert("el/la mayor es  " + nombre_1)
+            } else {
+                alert("Ninguno de los dos es mayor")
+            }
+            
+        }
+    </script>
 
 </body>
 </html>
